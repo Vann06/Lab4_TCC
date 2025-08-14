@@ -40,11 +40,16 @@ def run_file(path="regex_p1.txt"):
             png = OUT_DIR / f"afn_{i}.png"
             draw_fragment_ortho(frag, str(png))
 
+            print(f"\n Autómata generado: {png}")
+            print("─" * 60)
             while True:
-                w = input("  w = (ENTER para siguiente) ")
+                print("Ingrese una cadena w para verificar si pertenece al lenguaje,\n o presione ENTER para continuar con la siguiente expresión:")
+                w = input(" w =   ")
                 if w == "":
                     break
-                print("  ->", "sí" if accepts(frag, w) else "no")
+                result = "SÍ" if accepts(frag, w) else "NO"
+                print(f"   Resultado: {result}")
+                print()
 
 if __name__ == "__main__":
     run_file()

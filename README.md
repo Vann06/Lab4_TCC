@@ -1,5 +1,11 @@
 # Generador de Autómatas Finitos No Deterministas (AFN) para Expresiones Regulares
 
+## 📹 Video demostrativo
+
+[![Video de YouTube](https://img.youtube.com/vi/hMfBXDaeyiI/0.jpg)](https://youtu.be/YVup0Z4JT1E)
+
+---
+
 Este proyecto implementa un generador y visualizador de autómatas finitos no deterministas (AFN) a partir de expresiones regulares, usando el algoritmo de Thompson y visualización con matplotlib. El código está organizado en los siguientes módulos:
 
 - **regex_tools.py**: Convierte expresiones regulares infijas a notación postfija (RPN), insertando concatenaciones explícitas y manejando precedencias de operadores.
